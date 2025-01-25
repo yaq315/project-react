@@ -1,0 +1,79 @@
+body {
+   
+    font-family: Arial, sans-serif;
+  
+  }
+  .section{ 
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-image: url(../image/images4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.75;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 18rem;
+    margin: 0 auto 20px auto;
+    background-color:blanchedalmond ;
+    border: 1px solid #9f0f0f84;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  .btn{
+    background-color: #664F10;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.3s ease;
+  }
+  .btn:hover{
+    background-color:burlywood;
+  
+  }
