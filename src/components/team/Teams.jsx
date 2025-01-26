@@ -40,27 +40,27 @@ const CardsContainer = () => {
   ];
 
   return (
-    <section class="section">
-      
-    <div className="container mt-5">
+    <section className="section">
+      <div className="container mt-5">
         <h1>Team</h1>
-      <div className="row">
-        {cardsData.map((card) => (
-          <div key={card.id} className="col-md-4 mb-4">
-            <Card style={{ width: "18rem" }}>
-              <Card.Body>
-                <Card.Title>{card.Name}</Card.Title> 
-                <Card.Text>{card.description}</Card.Text> 
-                <Button className="btn"> GIT HUB </Button> 
-              </Card.Body>
-            </Card>
-          </div>
-        ))}
+        <div className="row">
+          {cardsData.map((card) => (
+            <div key={card.id} className="col-md-4 mb-4">
+              <Card style={{ width: "18rem" }} className="team-card">
+                <Card.Body>
+                  <Card.Title>{card.Name}</Card.Title> 
+                  <Card.Text>{card.description}</Card.Text> 
+                  <Button className="btn"> GIT HUB </Button> 
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };
 
 export default CardsContainer;
+
 
