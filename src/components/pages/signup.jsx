@@ -1,5 +1,7 @@
+
 import React, { useState } from "react";
 import "./sign.css";
+import { useNavigate } from "react-router-dom";
 import logo from "../image/logo.png";
 
 function Signup() {
@@ -16,6 +18,9 @@ function Signup() {
     email: "",
     password: "",
   });
+
+  const navigate = useNavigate();
+
 
   const validateField = (name, value) => {
     switch (name) {
@@ -54,6 +59,12 @@ function Signup() {
     // If no errors, submit the form
     if (Object.values(newErrors).every((error) => error === "")) {
       console.log("Form submitted successfully!", formData);
+
+      // Save user data to localStorage
+      localStorage.setItem("user", JSON.stringify(formData));
+      alert("Account created successfully!");
+
+      navigate("/login");
     }
   };
 
@@ -126,7 +137,7 @@ function Signup() {
 
               <button type="submit">Sign Up</button>
               <p className="login-link">
-                Already have an account? <a href="#">Login</a>
+                Already have an account? <a href="/login">Login</a>
               </p>
             </form>
           </article>
@@ -137,7 +148,3 @@ function Signup() {
 }
 
 export default Signup;
-
-
-
-

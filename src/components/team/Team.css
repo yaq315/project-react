@@ -7,15 +7,22 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 700px;
-  background-image: url(../image/images4.jpeg);
+  background-image: url(freepik__adjust__60671.png);
   background-repeat: no-repeat;
   background-size: cover;
   /* opacity: 0.75; */
 }
 
 .container {
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column ;
   padding: 20px;
+  width: 100%;
 }
 
 h1 {
@@ -26,9 +33,9 @@ h1 {
 }
 
 .team-card {
-  width: 100%;
-  max-width: 18rem;
-  margin: 0 auto 20px auto;
+  width: 100px;
+  /* max-width: 18rem; */
+  /* margin: 0 auto 20px auto; */
   background-color: rgb(245, 208, 162);
   border: 1px solid rgb(129, 45, 45);
   border-radius: 10px;
@@ -48,7 +55,7 @@ h1 {
 }
 
 .card-body {
-  padding: 15px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -69,7 +76,7 @@ h1 {
   background-color: rgb(129, 45, 45);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -78,3 +85,6 @@ h1 {
 .btn:hover {
   background-color: #e64a19;
 }
+
+
+

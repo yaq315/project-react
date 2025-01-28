@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Homepage from "./components/pages/home";
 import Signup from "./components/pages/signup";
-import Login from "./components/pages/login"
+import Login from "./components/pages/login";
+import AboutUs from "./components/pages/About";
 
 
   const Index = () => {
@@ -14,8 +15,11 @@ return(
     <Route path="/" element={<Homepage />} /> 
     <Route path="/signup" element={<Signup />} /> 
     <Route path="/login" element={<Login />} /> 
+  
   </Routes>
 </Router>
+
+ 
 )
 
   }

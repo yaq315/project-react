@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import logo from "../image/logo.png";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -12,6 +12,9 @@ function Login() {
     email: "",
     password: "",
   });
+
+ const navigate = useNavigate();
+
 
   const validateField = (name, value) => {
     switch (name) {
@@ -43,13 +46,27 @@ function Login() {
     const newErrors = {};
     Object.keys(formData).forEach((field) => {
       newErrors[field] = validateField(field, formData[field]);
+
+      navigate("/signup");
     });
 
     setErrors(newErrors);
 
-    // If no errors, submit the form
+   
+
+
     if (Object.values(newErrors).every((error) => error === "")) {
-      console.log("Form submitted successfully!", formData);
+      const storedUser = JSON.parse(localStorage.getItem("user"));
+
+      if (
+        storedUser &&
+        storedUser.email === formData.email &&
+        storedUser.password === formData.password
+      ) {
+        alert("Login successful!");
+      } else {
+        alert("Invalid email or password.");
+      }
     }
   };
 
@@ -97,7 +114,7 @@ function Login() {
 
               <button type="submit">Login</button>
               <p className="login-link">
-                Don't have an account? <a href="#">Sign up</a>
+                Don't have an account? <a href="/signup">Sign up</a>
               </p>
             </form>
           </article>
