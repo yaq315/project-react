@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./sign.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../image/logo.png";
+import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer"
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -70,6 +72,8 @@ function Signup() {
 
   return (
     <div>
+
+    <Navbar />
       <section className="showcase">
         <div className="overlay">
           <article className="left-section">
@@ -143,6 +147,7 @@ function Signup() {
           </article>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

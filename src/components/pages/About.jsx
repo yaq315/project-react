@@ -1,72 +1,68 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { FixedSizeList as List } from "react-window";
-// import { FaSchool, FaUsers, FaGlobe } from "react-icons/fa";
-// import MyImg from "../image/images3.jpeg";
-// import "./about.css";  
+import React from "react";
+import { motion } from "framer-motion";
+import MyImg from "../image/images3.jpeg";
+import { useTranslation } from "react-i18next";
+import Navbar from "../navbar/Navbar";
+import "./About.css";
+ import Footer from "../footer/Footer"
 
-// const AboutUs = () => {
-//   const Row = ({ index, style }) => (
-//     <div style={style} className="list-item">
-//       Item {index + 1}
-//     </div>
-//   );
+const AboutUs = () => {
 
-//   return (
-//     <section id="about" className="about-section">
-//       <motion.h2 
-//         className="about-title"
-//         initial={{ opacity: 0, y: -50 }}
-//         animate={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 0.8 }}
-//       >
-//         About Us
-//       </motion.h2>
+  
+  const [t,i18n] =useTranslation();
+  return (
+    <div>
+    <Navbar />
+    <section id="about" className="about-section">
 
-//       <motion.p 
-//         className="about-paragraph"
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ duration: 1 }}
-//       >
-//         This is a description about our company. We are dedicated to providing excellent service and fostering a positive environment.
-//       </motion.p>
+      <div className="about-sect">
+        <div>
+          {i18n.language=='en'&&< button className="btn btn-primary" onClick={() => {i18n.changeLanguage('ar');}}>Ar</button>}
+        </div>
+      <motion.h2 
+        className="about-title"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+       {t('about-title')} 
+      </motion.h2>
+      <div>
+       {i18n.language=='ar'&& <button className="btn btn-primary" onClick={() => i18n.changeLanguage('en')}>En</button>}
+      </div>
+      </div>
 
-//       <div className="about-icons">
-//         <motion.div whileHover={{ scale: 1.1 }} className="icon-box">
-//           <FaSchool className="icon" />
-//           <p>Our Mission</p>
-//         </motion.div>
-//         <motion.div whileHover={{ scale: 1.1 }} className="icon-box">
-//           <FaUsers className="icon" />
-//           <p>Our Team</p>
-//         </motion.div>
-//         <motion.div whileHover={{ scale: 1.1 }} className="icon-box">
-//           <FaGlobe className="icon" />
-//           <p>Global Reach</p>
-//         </motion.div>
-//       </div>
+  
+      <motion.div 
+        className="about-paragraph-container"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 0.2 }} 
+      >
+        <p className="about-paragraph">
+     
+        </p>
+        
+        {t('about-p2')}
+      </motion.div>
 
-//       <List
-//         height={200}
-//         itemCount={10}
-//         itemSize={35}
-//         width={300}
-//       >
-//         {Row}
-//       </List>
 
-//       <motion.img 
-//         className="about-image" 
-//         src={MyImg} 
-//         alt="About Us"
-//         initial={{ scale: 0.8, opacity: 0 }}
-//         animate={{ scale: 1, opacity: 1 }}
-//         transition={{ duration: 0.8 }}
-//       />
-//     </section>
-//   );
-// };
+      <motion.img 
+        className="about-image" 
+        src={MyImg} 
+        alt="About Us"
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true }} 
+      />
+      
+      
+    </section>
+    <Footer />
+    </div>
+  );
+};
 
-// export default AboutUs;
-
+export default AboutUs;

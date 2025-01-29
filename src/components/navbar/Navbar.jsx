@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
+
 import "./navbar.css";
 import logo from "../image/logo.png";
 
 const Navbar = () => {
+
+   const navigate = useNavigate();
   return (
     <nav className="navbar">
     
@@ -17,8 +21,9 @@ const Navbar = () => {
           <li>
             <a href="#hero">Home</a>
           </li>
-          <li>
-            <a href="#about">About Us</a>
+          <li >
+            <a href="/about">About Us</a>
+           
           </li>
           <li>
             <a href="#services">Services</a>

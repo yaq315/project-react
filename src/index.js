@@ -6,6 +6,7 @@ import Homepage from "./components/pages/home";
 import Signup from "./components/pages/signup";
 import Login from "./components/pages/login";
 import AboutUs from "./components/pages/About";
+import i18next from "./i18n";
 
 
   const Index = () => {
@@ -15,8 +16,10 @@ return(
     <Route path="/" element={<Homepage />} /> 
     <Route path="/signup" element={<Signup />} /> 
     <Route path="/login" element={<Login />} /> 
-  
+    <Route path="/about" element={< AboutUs/>} /> 
+
   </Routes>
+
 </Router>
 
  

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import logo from "../image/logo.png";
 import { useNavigate } from "react-router-dom";
+import  Navbar from "../navbar/Navbar"
+import Footer from "../footer/Footer";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -72,7 +74,8 @@ function Login() {
 
   return (
     <div>
-      <section className="showcase">
+      <Navbar />
+            <section className="showcase">
         <div className="overlay">
           <article className="left-section">
             <img src={logo} alt="Logo" className="logo" />
@@ -120,6 +123,7 @@ function Login() {
           </article>
         </div>
       </section>
+     < Footer />
     </div>
   );
 }

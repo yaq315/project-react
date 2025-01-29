@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";  
 import MyImg from '../image/images3.jpeg';
-import { FixedSizeList as List } from 'react-window'
+
 
 const AboutUs = () => {
   
@@ -19,6 +19,8 @@ const AboutUs = () => {
 
 
       <img className="about-image" src={MyImg} alt="About Us" />
+
+
     </section>
   );
 };
