@@ -13,7 +13,8 @@ import i18next from "./i18n";
 return(
   <Router>
   <Routes>
-    <Route path="/" element={<Homepage />} /> 
+    <Route path="/Home" element={<Homepage />} /> 
+
     <Route path="/signup" element={<Signup />} /> 
     <Route path="/login" element={<Login />} /> 
     <Route path="/about" element={< AboutUs/>} /> 

@@ -16,9 +16,7 @@ const AboutUs = () => {
     <section id="about" className="about-section">
 
       <div className="about-sect">
-        <div>
-          {i18n.language=='en'&&< button className="btn btn-primary" onClick={() => {i18n.changeLanguage('ar');}}>Ar</button>}
-        </div>
+      
       <motion.h2 
         className="about-title"
         initial={{ opacity: 0, y: -50 }}
@@ -27,9 +25,7 @@ const AboutUs = () => {
       >
        {t('about-title')} 
       </motion.h2>
-      <div>
-       {i18n.language=='ar'&& <button className="btn btn-primary" onClick={() => i18n.changeLanguage('en')}>En</button>}
-      </div>
+     
       </div>
 
   

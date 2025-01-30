@@ -1,10 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from "../image/logo.png";
-import Linkedin from '../image/download.png'
-import Facebbok from '../image/facebook.png'
-import Insagram from '../image/insta.jpeg'
+import Linkedin from '../image/linkdin.png'
+import Facebbok from '../image/logofacebook.png'
+import Insagram from '../image/insta-.png'
 import "./Footer.css";
+
 
  function Footer()   {
     const { t } = useTranslation();
@@ -34,7 +35,7 @@ import "./Footer.css";
                 </li>
                 <li style={{ fontSize: "13px" }}>
                   {" "}
-                  {t('location1')} <br /> {t('location2')}
+                  {t('location1')} 
                 </li>
               </ul>
               <ul className="box">
@@ -103,19 +104,7 @@ import "./Footer.css";
                     />
                   </a>
                 </div>
-                <li>
-                  <input type="button" value={t('subscribeButton')} />
-                </li>
-                <li>
-                  <div class="link-boxes">
-                    <div class="input-boxx">
-                      <input type="text" 
-                      placeholder={t('enterYourEmailFooter')}
-
-                      />
-                    </div>
-                  </div>
-                </li>
+               
               </ul>
             </div>
           </div>

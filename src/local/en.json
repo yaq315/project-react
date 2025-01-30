@@ -1,10 +1,39 @@
 {
     "about-title":"About us",
     "about-p2":"This is a description about our company. We are dedicated to providing excellent service and fostering a positive environment. Our team is passionate about delivering high-quality results to meet our clients' needs.We strive for innovation and excellence in every project we undertake, ensuring customer satisfaction is our top priority.",
-     "location1" :"aqaba-Jordan"
+     "location1" :"aqaba-Jordan",
+     "Home":"Home",
+     "About Us":"About Us",
+     "contact":"Contact",
+     "Login" :"Login",
+     "Sign Up":"Sign Up",
 
 
+     "Footer": {
+        "Box1": {
+          "link1": "Company",
+          "link2": "About Us",
+          "link3": "Jobs",
+          "link4": "Partners",
+          "link5": "User Reviews"
+        },
+        "Box2" : {
+          "link1" : "Curriculum",
+          "link2" : "Courses",
+          "link3" : "Standards",
+          "link4" : "Hour of Code"
+        },
+        "Box3" : {
+          "link1" : "PLANS",
+          "link2" : "Teacher Plans",
+          "link3" : "Parent Plans" ,
+          "link4" : "Give a Gift" 
+        },
+        "Box4" : {
+          "link1" : "Follow us"
+  
+        }
+      }
+    }
 
 
-
-}
