@@ -23,16 +23,18 @@ const AboutUs = () => {
 <div className="slider-container">
 <motion.div 
 className="image-slider"
- animate={{ x: isHovered ? 0 : "-25%" }} 
+ animate={{ x: isHovered ? 0 : "-30%" }} 
   transition={{
   x: { repeat: Infinity, duration: isHovered ? 0 : 15, ease: "linear" }
   }}
+
+
    onHoverStart={() => setIsHovered(true)}  
   onHoverEnd={() => setIsHovered(false)} 
      >
-  {[...images, ...images].map((img, index) => ( 
-   <div key={index} className="slide">
-  <img src={img} alt={`Slide ${index}`} className="about1-image" />
+  {[...images, ...images].map((img) => ( 
+   <div  className="slide">
+  <img src={img}  className="about1-image" />
  </div>
 ))}
  </motion.div>

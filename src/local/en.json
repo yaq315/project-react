@@ -61,6 +61,7 @@
   },
   "btn": "GitHub"
 },
+"Services":"Services",
 "services":{
 "title" :{
 "title1" :"Specialized Courses",
@@ -86,8 +87,8 @@
 
     },
 
-   "activity.title":"activity",
-  
+   "Activity":"Activity",
+    "activity":{
       "title" : {
         "Title1" : "Educational trip",
         "Title2" :"Discussion Panels",
@@ -103,10 +104,18 @@
       "Date2" : "3/2/2025",
       "Date3" :"Every Monday"
 
-      }
-
-
-
+      }},
+      "Contact Us":"Contact Us",
+      "Name":"Name",
+      "Email":"Email",
+      "Message":"Message",
+      "Send Message":"Send Message",
+    "information":"information",
+      "phone":"phone",
+      "Location":"Location",
+      "Aqaba-Jordan":"Aqaba-Jordan",
+      "Our Location":"Our Location"
+     
 
   }
 

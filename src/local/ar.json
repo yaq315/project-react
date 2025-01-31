@@ -64,7 +64,7 @@
   "btn": "جيت هب"
 },
 
-
+"Services":"الخدمات",
 "services":{
 "title" :{
 "title1" :"الدورات المتخصصة",
@@ -89,7 +89,8 @@
 }
 },
 
-"activity.title":"الانشطة",
+"Activity":"الانشطة",
+"activity":{
 "title" : {
   "Title1" : "رحلة تعليمية",
   "Title2" : "حلقات نقاش",
@@ -105,7 +106,17 @@
 "Date2" : "3/2/2025",
 "Date3" : "كل يوم إثنين"
 
-}
+}},
+"Contact Us":"تواصل معنا ",
+"Name":"الاسم",
+"Email":"البريد الالكتروني",
+"Message":"الرسالة",
+  "Send Message":"ارسال",
+  "information":"معلومات",
+  "phone":"رقم الهاتف",
+  "Location":"الموقع",
+  "Aqaba-Jordan":"العقبة-الاردن",
+  "Our Location":"موقعنا"
 }
 
 

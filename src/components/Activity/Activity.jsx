@@ -31,7 +31,7 @@ const Activity = () => {
 
   return (
     <section id="activity" className="activity-section"> 
-      <h1 className="activity-title">{t("activity.title")}</h1>
+      <h1 className="activity-title">{t("Activity")}</h1>
       <div className="cards1-container">
         {cards.map((card, index) => (
           <div key={index} className="card1">

@@ -8,7 +8,17 @@
   align-items: center;
   flex-direction: column; 
 }
-
+.information-title{
+  color: rgb(129, 45, 45);
+  font-size: 2.5rem;
+   margin: 50px;
+  text-align: center;
+}
+.cards2-container{
+  display: flex;
+  justify-content: center;
+  text-align: center
+}
 .section-title {
   color: rgb(129, 45, 45);
   font-size: 2.5rem;
@@ -72,6 +82,14 @@
 .submit-btn:hover {
   background: #7A4B4B;
   transform: scale(1.05);
+}
+
+.location-contact{
+  margin: 100px;
+}
+.location{
+  text-align: center;
+  color:rgb(129, 45, 45); 
 }
 
 /* Responsive Design */

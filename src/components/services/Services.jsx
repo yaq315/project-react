@@ -8,7 +8,7 @@ const Services = () => {
 
   return (
     <section id="services" className="services-section">
-      <h1 className="services-title">Services</h1>
+      <h1 className="services-title">{t("Services")}</h1>
       <div className="cards-container">
         <div className="service-card">
           <h3 className="card-title">{t('services.title.title1')}</h3>
