@@ -1,30 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./about.css";  
-import MyImg from '../image/images3.jpeg';
+import Img1 from '../image/aboutimg.webp';
+import Img2 from '../image/aboutimg1.jpeg';
+import Img3 from '../image/aboutimg2.jpeg';
+import Img4 from '../image/aboutimg4.jpg';
+import { useTranslation } from 'react-i18next';
 
+const images = [Img1, Img2, Img3, Img4];
 
 const AboutUs = () => {
-  
-  
-  return (
-    <section id="about" className="about-section">
-      <h2 className="about-title">About Us</h2>
+    const { t } = useTranslation(); 
+    const [isHovered, setIsHovered] = useState(false); 
 
-      <div className="about-paragraph">
-        Future Coders is an innovative educational platform aimed at empowering individuals to acquire the digital and programming skills they need in the modern technological era. 
-        Future Coders stands out with its interactive learning methodology, making it easy for both beginners and professionals to effectively develop their skills. Whether you're looking to start a career in technology or enhance your current skills,
-        Future Coders provides you with the tools and knowledge necessary to achieve your goals.
-      </div>
+    return (
+ <div className="about1">
+  <section id="about" className="about1-section">
+    <h2 className="about1-title">{t("about-title")}</h2>
+  <div className="about1-paragraph">{t("about-p2")}</div>
 
-
-
-      <img className="about-image" src={MyImg} alt="About Us" />
-
-
-    </section>
-  );
+               
+<div className="slider-container">
+<motion.div 
+className="image-slider"
+ animate={{ x: isHovered ? 0 : "-25%" }} 
+  transition={{
+  x: { repeat: Infinity, duration: isHovered ? 0 : 15, ease: "linear" }
+  }}
+   onHoverStart={() => setIsHovered(true)}  
+  onHoverEnd={() => setIsHovered(false)} 
+     >
+  {[...images, ...images].map((img, index) => ( 
+   <div key={index} className="slide">
+  <img src={img} alt={`Slide ${index}`} className="about1-image" />
+ </div>
+))}
+ </motion.div>
+  </div>
+   </section>
+        </div>
+    );
 };
 
 export default AboutUs;
-
-

@@ -5,20 +5,24 @@ import "./index.css";
 import Homepage from "./components/pages/home";
 import Signup from "./components/pages/signup";
 import Login from "./components/pages/login";
-import AboutUs from "./components/pages/About";
-import i18next from "./i18n";
+  import Aboutpage from "./components/pages/Aboutpage";
+import Contactbage from "./components/pages/Contactbage";
+import './i18n'; 
+
+
 
 
   const Index = () => {
 return(
   <Router>
   <Routes>
+    <Route path="/" element={<Homepage />} /> 
     <Route path="/Home" element={<Homepage />} /> 
-
     <Route path="/signup" element={<Signup />} /> 
     <Route path="/login" element={<Login />} /> 
-    <Route path="/about" element={< AboutUs/>} /> 
-
+    <Route path="/Aboutpage" element={< Aboutpage/>} /> 
+    <Route path="/Contactbage" element={< Contactbage/>} /> 
+  
   </Routes>
 
 </Router>

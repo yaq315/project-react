@@ -147,7 +147,7 @@ function Signup() {
           </article>
         </div>
       </section>
-      <Footer />
+     <Footer />
     </div>
   );
 }

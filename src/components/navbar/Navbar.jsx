@@ -2,7 +2,6 @@ import React , { useEffect } from "react";
 import { Link } from "react-router-dom"; 
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-
 import "./navbar.css";
 import logo from "../image/logo.png";
 
@@ -29,10 +28,10 @@ const Navbar = () => {
             <a href="/Home">{t('Home')}</a>
           </li>
           <li>
-            <a href="/about">{t('About Us')}</a>
+            <a href="/Aboutpage">{t('About Us')}</a>
           </li>
           <li>
-            <a href="#contact">{t('contact')}</a>
+            <a href="/Contactbage">{t('contact')}</a>
           </li>
         </ul>
       </div>
@@ -48,11 +47,14 @@ const Navbar = () => {
 
        
         <div>
+        
+
+     
           {i18n.language === 'ar' && (
-            <button className="btn btn-sucsses" onClick={() => i18n.changeLanguage('en')}>En</button>
+          <button  className="button login-btn"  onClick={() => i18n.changeLanguage('en')}>English</button>
           )}
           {i18n.language === 'en' && (
-            <button className="btn btn-sucsses" onClick={() => i18n.changeLanguage('ar')}>Ar</button>
+               <button  className="button login-btn"  onClick={() => i18n.changeLanguage('ar')}>العربية</button>
           )}
         </div>
 

@@ -1,34 +1,37 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./activity.css";
 import imag1 from "../image/imag1s1.jpeg";
 import imag2 from "../image/imag2s1.jpeg";
 import imag3 from "../image/imag3s1.jpeg";
 
 const Activity = () => {
+  const { t } = useTranslation();
+
   const cards = [
     {
       image: imag1,
-      titel: "Educational trip",
-      Description: "Visits to technology companies or technology exhibitions",
-      date: "5/4/2025",
+      titel: t("activity.title.Title1"),
+      Description: t("activity.desc.Description1"),
+      date: t("activity.date.Date1"),
     },
     {
       image: imag2,
-      titel: "Discussion Panels",
-      Description: "A group of people participating in a discussion",
-      date: "2/3/2025",
+      titel: t("activity.title.Title2"),
+      Description: t("activity.desc.Description2"),
+      date: t("activity.date.Date2"),
     },
     {
       image: imag3,
-      titel: "Weekly Coding Challenges",
-      Description: "Weekly coding challenges to improve students' skills.",
-      date: "Every Monday",
+      titel: t("activity.title.Title3"),
+      Description: t("activity.desc.Description3"),
+      date: t("activity.date.Date3"),
     },
   ];
 
   return (
-    <section id="activity" className="activity-section">
-      <h1 className="activity-title">Activity</h1>
+    <section id="activity" className="activity-section"> 
+      <h1 className="activity-title">{t("activity.title")}</h1>
       <div className="cards1-container">
         {cards.map((card, index) => (
           <div key={index} className="card1">

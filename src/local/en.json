@@ -33,7 +33,82 @@
           "link1" : "Follow us"
   
         }
-      }
-    }
+      },
+      "hero" :{
+  "title" : "Future Coders",
+  "subtitle" : "Learn coding the fun and easy way!",
+  "description" : "An interactive platform for kids to develop their creativity and coding skills through games, exciting projects, and kid-friendly lessons.",
+  "about_paragraph":"Future Coders is an innovative educational platform aimed at empowering individuals to acquire the digital and programming skills they need in the modern technological era.Future Coders stands out with its interactive learning methodology, making it easy for both beginners and professionals to effectively develop their skills. Whether you're looking to start a career in technology or enhance your current skills, Future Coders provides you with the tools and knowledge necessary to achieve your goals."
+},
 
+"team" :{
+    "title":"team",
+  "name" :{
+    "name1" :"Mohammed Alomari",
+    "name2" : "Yaqoot Gharaibeh ",
+    "name3" : "Ahmad Owais",
+    "name4" : "Sedra al awad",
+    "name5" : "Enas Abu Nassar" ,
+    "name6" : "Saba Atia"
+  },
+  "desc" : {
+    "desc1" : "Project Manager",
+    "desc2" : "Backend Developer",
+    "desc3" : "UI/UX Designer",
+    "desc4" :"UI/UX Designer",
+    "desc5" : "UI/UX Designer",
+    "desc6" : "Frontend Developer"
+  },
+  "btn": "GitHub"
+},
+"services":{
+"title" :{
+"title1" :"Specialized Courses",
+"title2" :"Hands-on Projects",
+"title3" : "Interactive Platforms"
+},
+"list1" : {
+  "lis1" : "Programming in languages like Python, JavaScript, Java, and C++",
+  "lis2" : "Mobile app development (Android and iOS) ",
+  "lis3" : "Artificial Intelligence and Machine Learning.",
+  "lis4" :"Data analysis and Data Science "
+},
+"list2" : {
+  "lis1":"Small projects to apply what you’ve learned",
+  "lis2":"Coding challenges to enhance skills",
+  "lis3" : "Competitions and events to foster creativity"
+},
+"list3"  : {
+  "lis1":"Online IDE for writing and executing code",
+  "lis2" : "Interactive quizzes to measure progress",
+  "lis3": "Discussion forums to connect with learners and experts."
+}
+
+    },
+
+   "activity.title":"activity",
+  
+      "title" : {
+        "Title1" : "Educational trip",
+        "Title2" :"Discussion Panels",
+        "Title3" :"Weekly Coding Challenges"
+      },
+      "desc" :{
+      "Description1" : " Visits to technology companies or technology exhibitions",
+      "Description2" : "A group of people participating in a discussion ",
+      "Description3" : " Weekly coding challenges to improve students' skills"
+      },
+      "date" : {
+      "Date1" : "4/5/2025",
+      "Date2" : "3/2/2025",
+      "Date3" :"Every Monday"
+
+      }
+
+
+
+
+  }
+
+  
 

@@ -7,15 +7,14 @@ export default function Contact() {
 
   return (
     <section className="contact-section" id="contact">
-      
       <h2 className="section-title">Contact Us</h2>
-      
-      <div className="contact-container">
+      <div className="contact-form-container">
         <form className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input 
               type="text"
+              id="name"
               onFocus={() => setInputFocus('name')}
               onBlur={() => setInputFocus(null)}
               style={{
@@ -28,6 +27,7 @@ export default function Contact() {
             <label htmlFor="email">Email</label>
             <input 
               type="email"
+              id="email"
               onFocus={() => setInputFocus('email')}
               onBlur={() => setInputFocus(null)}
               style={{
@@ -39,6 +39,7 @@ export default function Contact() {
           <div className="form-group">
             <label htmlFor="message">Message</label>
             <textarea
+              id="message"
               onFocus={() => setInputFocus('message')}
               onBlur={() => setInputFocus(null)}
               style={{
@@ -64,4 +65,3 @@ export default function Contact() {
     </section>
   );
 }
-
