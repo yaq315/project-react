@@ -69,6 +69,7 @@ function Login() {
       } else {
         alert("Invalid email or password.");
       }
+      navigate("/Aboutpage")
     }
   };
 

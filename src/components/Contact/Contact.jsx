@@ -100,7 +100,7 @@ export default function Contact() {
           <div className="location">
             <h1>{t("Our Location")}</h1>
             <a href="https://www.google.com/maps/place/Orange+Digital+Village+Aqaba/@29.535652,35.0123723,17z/data=!3m1!4b1!4m6!3m5!1s0x150071875a9fca41:0xf5d61d999f967371!8m2!3d29.535652!4d35.0123723!16s%2Fg%2F11t2b3tv6d?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D">
-              <img style={{width:"200px",borderRadius:"50px",gap:"30px"}} src={Image2} alt="Map" />
+              <img style={{width:"300px",borderRadius:"50px",gap:"30px"}} src={Image2} alt="Map" />
             </a>
           </div>
         </section>

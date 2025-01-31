@@ -45,19 +45,19 @@
     "title":"team",
   "name" :{
     "name1" :"Mohammed Alomari",
-    "name2" : "Yaqoot Gharaibeh ",
-    "name3" : "Ahmad Owais",
+    "name2" : "Ahmad Owais",
+    "name3" : "Yaqoot Gharaibeh ",
     "name4" : "Sedra al awad",
     "name5" : "Enas Abu Nassar" ,
     "name6" : "Saba Atia"
   },
   "desc" : {
-    "desc1" : "Project Manager",
-    "desc2" : "Backend Developer",
-    "desc3" : "UI/UX Designer",
-    "desc4" :"UI/UX Designer",
-    "desc5" : "UI/UX Designer",
-    "desc6" : "Frontend Developer"
+    "desc1" : " Manager",
+    "desc2" : "Deputy manager",
+    "desc3" : "teacher",
+    "desc4" :"teacher",
+    "desc5" : "teacher",
+    "desc6" : "teacher"
   },
   "btn": "GitHub"
 },
