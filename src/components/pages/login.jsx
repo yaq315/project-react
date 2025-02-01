@@ -3,8 +3,11 @@ import logo from "../image/logo.png";
 import { useNavigate } from "react-router-dom";
 import  Navbar from "../navbar/Navbar"
 import Footer from "../footer/Footer";
+import { useTranslation } from 'react-i18next';
 
 function Login() {
+  
+    const { t, i18n } = useTranslation(); 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -81,14 +84,13 @@ function Login() {
           <article className="left-section">
             <img src={logo} alt="Logo" className="logo" />
             <p className="description">
-              See how experienced developers solve problems in real-time.
-              Watching scripted tutorials is great, but understanding how
-              developers think is invaluable.
+              {t("logindes")}
+         
             </p>
           </article>
           <article className="right-section">
             <form className="form" onSubmit={handleSubmit}>
-              <h2>Login</h2>
+              <h2>{t("Login")}</h2>
 
               <div className="input-group">
                 <input
@@ -116,9 +118,9 @@ function Login() {
                 {errors.password && <small className="error">{errors.password}</small>}
               </div>
 
-              <button type="submit">Login</button>
-              <p className="login-link">
-                Don't have an account? <a href="/signup">Sign up</a>
+              <button type="submit">{t("Login")}</button>
+              <p className="login-link">{t("Loginqus")} 
+               <a href="/signup"> {t("Sign Up")}</a>
               </p>
             </form>
           </article>

@@ -1,55 +1,35 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { FixedSizeList as List } from "react-window";
-import { useTranslation } from 'react-i18next';
-
 import "./Team.css";
+import img1 from "../image/imgteam1.webp"
+import img2 from "../image/imgteam2.webp"
+import img3 from "../image/team3.jpg"
+import img4 from "../image/imgteam4.jpg"
+import img5 from "../image/temimg5.jpg"
+import img6 from "../image/teamimg6.jpg"
+const teamMembers = [
+  { name: "Mohammed Al-Omari", role: "Director", img: img1},
+  { name: "Ahmed Aweis", role: "Deputy Director", img: img2 },
+  { name: "Yaqoot Al-Ghraibeh", role: "Teacher", img: img3},
+  { name: "Saba Atiya", role: "Teacher", img: img4},
+  { name: "Enas Abu Nassar", role: "Teacher", img: img5 },
+  { name: "Sedra Wael", role: "Teacher", img: img6 },
+];
 
-const CardsContainer = () => {
-  const { t } = useTranslation(); 
-
-  const cardsData = [
-    { id: 1, nameKey: "team.name.name1", descKey: "team.desc.desc1" },
-    { id: 2, nameKey: "team.name.name2", descKey: "team.desc.desc2" },
-    { id: 3, nameKey: "team.name.name3", descKey: "team.desc.desc3" },
-    { id: 4, nameKey: "team.name.name4", descKey: "team.desc.desc4" },
-    { id: 5, nameKey: "team.name.name5", descKey: "team.desc.desc5" },
-    { id: 6, nameKey: "team.name.name6", descKey: "team.desc.desc6" }
-  ];
-
-  const CardItem = ({ index, style }) => {
-    const card = cardsData[index];
-
-    return (
-      <div style={style} className="mb-4 list">
-        <Card style={{ width: "150px", height: "200px" }} className="team-card mx-auto">
-          <Card.Body>
-            <Card.Title>{t(card.nameKey)}</Card.Title> 
-            <Card.Text>{t(card.descKey)}</Card.Text>
-            <Button className="btn">{t("team.btn")}</Button>
-          </Card.Body>
-        </Card>
-      </div>
-    );
-  };
-
+const TeamSection = () => {
   return (
-    <section className="section">
-      <div className="container mt-5">
-        <h1>{t("team.title")}</h1> 
-        <List
-          height={250}
-          itemCount={cardsData.length}
-          itemSize={200}
-          layout="horizontal"
-          width={600}
-        >
-          {CardItem}
-        </List>
+    <div className="team-section">
+      <h2> Team</h2>
+      <div className="team-container">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="team-item">
+            <img src={member.img} alt={member.name} />
+            <h3>{member.name}</h3>
+            <p>{member.role}</p>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default CardsContainer;
+export default TeamSection;
