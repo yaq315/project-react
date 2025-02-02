@@ -32,16 +32,16 @@ export default function Aboutpage() {
   ];
 
   const students = [
-    { name: "Ali", avatar: img1, bio: "Loves programming with Scratch." },
-    { name: "Laila", avatar: img2, bio: "Enjoys building simple coding projects." },
-    { name: "Yasser", avatar: img3, bio: "Explores robotics with Raspberry Pi." },
-    { name: "Salma", avatar: img4, bio: "Enjoys solving coding puzzles with Blockly." },
-    { name: "Ahmed", avatar: img5, bio: "Programs animated characters in Scratch." },
-    { name: "Noor", avatar: img6, bio: "Loves experimenting with AI for kids." },
-    { name: "Ziad", avatar: img7, bio: "Learning to create interactive apps for kids." },
-    { name: "Mariam", avatar: img8, bio: "Aspires to be a robotics engineer!" },
-    { name: "Hassan", avatar: img9, bio: "Enjoys coding in Minecraft Education." },
-    { name: "Nadia", avatar: img10, bio: "Loves building interactive games!" },
+    { name:t("students.name.name1") , avatar: img1, bio: t("students.bio.bio1")},
+    { name:t("students.name.name2"), avatar: img2, bio:t("students.bio.bio2") },
+    { name: t("students.name.name3"), avatar: img3, bio: t("students.bio.bio3")},
+    { name: t("students.name.name4"), avatar: img4, bio: t("students.bio.bio4")},
+    { name: t("students.name.name5"), avatar: img5, bio: t("students.bio.bio5") },
+    { name: t("students.name.name6"), avatar: img6, bio: t("students.bio.bio6") },
+    { name: t("students.name.name7"), avatar: img7, bio: t("students.bio.bio7") },
+    { name: t("students.name.name8"), avatar: img8, bio: t("students.bio.bio8")},
+    { name: t("students.name.name9"), avatar: img9, bio: t("students.bio.bio9") },
+    { name: t("students.name.name10"), avatar: img10, bio:t("students.bio.bio10") },
   ];
 
   return (
@@ -50,25 +50,11 @@ export default function Aboutpage() {
       <AboutUs />
       <Team />
 
-      <section id="partners" className="partners-section">
-        <h2 className="partners-title">Our Partners </h2>
-        <div className="partners-container">
-          {partners.map((partner, index) => (
-            <motion.img
-              key={index}
-              src={partner.logo}
-              alt={partner.name}
-              className="partner-logo"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
-            />
-          ))}
-        </div>
-      </section>
+     
 
   
       <section id="students" className="students-section">
-        <h2 className="students-title">Our Young Coders</h2>
+        <h2 className="students-title" >{t("students.title")} </h2>
         <motion.div className="students-slider" whileTap={{ cursor: "grabbing" }}>
           <motion.div
             className="students-track"
@@ -85,7 +71,21 @@ export default function Aboutpage() {
           </motion.div>
         </motion.div>
       </section>
-
+      <section id="partners" className="partners-section">
+        <h2 className="partners-title">{t("partners-title")} </h2>
+        <div className="partners-container">
+          {partners.map((partner, index) => (
+            <motion.img
+              key={index}
+              src={partner.logo}
+              alt={partner.name}
+              className="partner-logo"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
+          ))}
+        </div>
+      </section>
       <Footer />
     </div>
   );

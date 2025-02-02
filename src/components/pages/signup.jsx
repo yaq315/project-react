@@ -91,7 +91,7 @@ function Signup() {
                 <input
                   type="text"
                   name="firstName"
-                  placeholder="First Name"
+                  placeholder={t("First Name")}
                   value={formData.firstName}
                   onChange={handleChange}
                   className={errors.firstName ? "invalid" : "valid"}
@@ -104,7 +104,7 @@ function Signup() {
                 <input
                   type="text"
                   name="lastName"
-                  placeholder="Last Name"
+                  placeholder={t("Last Name")}
                   value={formData.lastName}
                   onChange={handleChange}
                   className={errors.lastName ? "invalid" : "valid"}
@@ -117,7 +117,7 @@ function Signup() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder={t("Email Address")}
                   value={formData.email}
                   onChange={handleChange}
                   className={errors.email ? "invalid" : "valid"}
@@ -130,7 +130,7 @@ function Signup() {
                 <input
                   type="password"
                   name="password"
-                  placeholder="Password"
+                  placeholder={t("Password")}
                   value={formData.password}
                   onChange={handleChange}
                   className={errors.password ? "invalid" : "valid"}
@@ -139,9 +139,9 @@ function Signup() {
                 {errors.password && <small className="error">{errors.password}</small>}
               </div>
 
-              <button type="submit">Sign Up</button>
-              <p className="login-link">
-                Already have an account? <a href="/login">Login</a>
+              <button type="submit">{t("Sign Up")}</button>
+              <p className="login-link">{t("Already have an account?")}
+                 <a href="/login">{t("Login")}</a>
               </p>
             </form>
           </article>

@@ -41,9 +41,9 @@ const Navbar = () => {
           <button className="button login-btn">{t('Login')}</button>
         </Link>
        
-        <Link to="/signup">
+        {/* <Link to="/signup">
           <button className="button signup-btn">{t('Sign Up')}</button>
-        </Link>
+        </Link> */}
 
        
         <div>

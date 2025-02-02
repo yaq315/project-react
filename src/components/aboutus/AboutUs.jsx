@@ -23,9 +23,9 @@ const AboutUs = () => {
 <div className="slider-container">
 <motion.div 
 className="image-slider"
- animate={{ x: isHovered ? 0 : "-30%" }} 
+ animate={{ x: isHovered ? 0 : "-50%" }} 
   transition={{
-  x: { repeat: Infinity, duration: isHovered ? 0 : 15, ease: "linear" }
+  x: { repeat: Infinity, duration: isHovered ? 7: 15, ease: "linear" }
   }}
 
 

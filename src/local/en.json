@@ -47,20 +47,18 @@
     "name1" :"Mohammed Alomari",
     "name2" : "Ahmad Owais",
     "name3" : "Yaqoot Gharaibeh ",
-    "name4" : "Sedra al awad",
+    "name4" : "Saba Atia",
     "name5" : "Enas Abu Nassar" ,
-    "name6" : "Saba Atia"
+    "name6" : "Sedra al awad"
   },
-  "desc" : {
-    "desc1" : " Manager",
-    "desc2" : "Deputy manager",
-    "desc3" : "teacher",
-    "desc4" :"teacher",
-    "desc5" : "teacher",
-    "desc6" : "teacher"
-  },
-  "btn": "GitHub"
-},
+  "role" : {
+    "role1" : "Director",
+    "role2" :"Deputy Director",
+    "role3":"Teacher",
+    "role4" :"Teacher",
+    "role5" : "Teacher",
+    "role6" :"Teacher"
+  }},
 "Services":"Services",
 "services":{
 "title" :{
@@ -116,9 +114,47 @@
       "Aqaba-Jordan":"Aqaba-Jordan",
       "Our Location":"Our Location",
       "logindes":" Welcome to Future Coders! We're excited to help your child explore the world of coding. Join uson a journey of learning and creativity—where every kid can become a future tech leader!",
-      "Loginqus":"  Don't have an account?"
-     
+      "Loginqus":"  Don't have an account?",
+     "First Name":"First Name",
+       "Last Name":"Last Name",
+       "Email Address":"Email Address",
+       "Password":"Password",
+       "Already have an account?":"Already have an account?",
+       
+      "students" : {
+        "title" : "Our Young Coders", 
 
+       
+       
+       
+        "name" :{
+"name1" : "Ali",
+"name2": "Laila",  
+"name3":  "Yasser",
+"name4" : "Salma",
+"name5" : "Ahmed",
+"name6" : "Noor",
+"name7" : "Ziad",
+"name8":"Mariam",
+"name9" : "Hassan",
+"name10": "Nadia"
+
+},
+"bio":{
+  "bio1":"Loves programming with Scratch." ,
+  "bio2":"Enjoys building simple coding projects." ,
+  "bio3": "Explores robotics with Raspberry Pi." ,
+  "bio4":"Enjoys solving coding puzzles with Blockly." ,
+  "bio5":"Programs animated characters in Scratch.",
+  "bio6":"Loves experimenting with AI for kids.",
+  "bio7":"Learning to create interactive apps for kids.",
+  "bio8": "Aspires to be a robotics engineer!",
+  "bio9":"Enjoys coding in Minecraft Education.",
+  "bio10" :"Loves building interactive games!"
+}
+    
+  },
+  "partners-title":"partners"
   }
 
   

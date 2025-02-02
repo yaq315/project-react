@@ -59,21 +59,21 @@
 }
 .partners-section{
   text-align: center;
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
   background-color: #fff3e0;
-  height: 250px;
+  height: 300px;
 }
 
 .partners-container, .students-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 100px;
   color:rgb(129, 45, 45) ;
 }
 .partners-title{
   color:rgb(129, 45, 45);
-  padding: 80px;
+  padding: 50px;
 }
 
 .partner-card{
@@ -111,7 +111,7 @@
   width:1200px;
   text-align: center;
   padding: 50px 20px;
-  margin: 50px;
+ margin: 50px;
   background-color:#fff3e0;
 
 }
